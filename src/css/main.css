@@ -1,0 +1,30 @@
+body {
+    background: #FFF8F2;
+    background-color: #FFF8F2!important;
+}
+
+nav {
+    display: flex;
+    position: fixed!important;
+    z-index: 10;
+    height: 5%;
+    margin: 0 0 2rem 0;
+}
+
+
+@media screen and (max-width: 480px) {
+.mobileNavRow {
+    display: flex;
+    min-height: 50px;
+  }
+  .mobileNav {
+    display: inline-block !important;
+    z-index: 10;
+    margin: 1% auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    position: fixed;
+  }
+}
