@@ -66,6 +66,7 @@
     border-radius: 3px;
     box-shadow: 0px 0px 11px 5px rgba(186, 186, 186,1);
     -webkit-box-shadow: 0px 0px 11px 5px rgba(186, 186, 186,1);
+    min-width: 500px;
 }
 
 .Header {
@@ -141,6 +142,7 @@
         margin: auto;
         border-top: 20px solid;
         border-top-color: #F26C58;
+        min-width: auto;
     }
 
     .Pic {
@@ -157,6 +159,7 @@
     .Nomobile {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -182,7 +185,7 @@
     .BoxRow {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding-top: 10rem;
     }
 
@@ -207,6 +210,7 @@
         display: flex;
         height: 500px;
         width: 100%;
+        min-width: auto;
         background-color: #ffffff;
         z-index: 2;
         margin: -50px 0;
@@ -214,6 +218,7 @@
         border-top-color: #F26C58;
         box-shadow: none;
         -webkit-box-shadow: none;
+        
     }
 
     .Pic {
