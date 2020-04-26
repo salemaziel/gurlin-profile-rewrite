@@ -7,6 +7,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import { Signature2Xs, MenuIcon } from "../images/index"
 import navmobileStyles from "./navmobile.module.css"
+import Nav from 'react-bootstrap/Nav'
 
 class NavMobile extends React.Component {
   constructor() {
@@ -67,15 +68,23 @@ class NavMobile extends React.Component {
           }
           titleStyle={{ backgroundColor: "rgba(255,255,255,0.85)", color: "#black", padding: '30px' }}
           items={[
+            <Nav.Item>
             <Link rel="preload" className={navmobileStyles.navLink} to="/">
               Home
-            </Link>,
+            </Link>
+            </Nav.Item>,
+            
+             <Nav.Item>
             <Link rel="preload" className={navmobileStyles.navLink} to="/about">
               About
-            </Link>,
+            </Link>
+            </Nav.Item>,
+
+            <Nav.Item>
             <Link rel="preload" className={navmobileStyles.navLink} to="/contact">
               Contact
-            </Link>,
+            </Link>
+            </Nav.Item>,
           ]}
           itemStyle={{
             background: "inherit",

@@ -10,24 +10,39 @@ import navboxStyle from "./navbox.module.css";
 
 const NavBox = () => (
   <Nav className={navboxStyle.NavBox}>
-    <h1>Nav</h1>
 
     <Row>
       <Col>
         <ul className={navboxStyle.NavList}>
           <Nav.Item>
-              <Link>
-            <li>Home</li>
+              <Link rel="preload" to="/">
+            <li className={navboxStyle.NavListItem}
+            >Home</li>
             </Link>
           </Nav.Item>
 
           <Nav.Item>
-          <Link to="/about">
-            <li>About</li>
+          <Link rel="preload" to="/about">
+            <li className={navboxStyle.NavListItem}
+            >About</li>
             </Link>
           </Nav.Item>
 
-          <Nav.Item>
+      <Nav.Item>
+          <Link rel="preload" to="/contact">
+            <li className={navboxStyle.NavListItem}
+            >Contact</li>
+            </Link>
+      </Nav.Item>
+
+      <Nav.Item>
+          <Link rel="preload" to="/gallery">
+            <li className={navboxStyle.NavListItem}
+            >Gallery</li>
+            </Link>
+       </Nav.Item>
+
+       {/*   <Nav.Item>
           <Link>
             <li>Contact</li>
             </Link>
@@ -37,12 +52,14 @@ const NavBox = () => (
           <Link>
             <li>Gallery</li>
             </Link>
-          </Nav.Item>
+       </Nav.Item>  * /}
         </ul>
       </Col>
+       <div className={navboxStyle.Line} />
+
       <Col>
       <ul className={navboxStyle.NavList}>
-          <Nav.Item>
+     {/*     <Nav.Item>
               <Link>
             <li>Home</li>
             </Link>
@@ -52,19 +69,21 @@ const NavBox = () => (
           <Link>
             <li>About</li>
             </Link>
-          </Nav.Item>
+     </Nav.Item>  * /}
 
           <Nav.Item>
-          <Link>
-            <li>Contact</li>
+          <Link rel="preload" to="/contact">
+            <li className={navboxStyle.NavListItem}
+            >Contact</li>
             </Link>
           </Nav.Item>
           
           <Nav.Item>
-          <Link>
-            <li>Gallery</li>
+          <Link rel="preload" to="/gallery">
+            <li className={navboxStyle.NavListItem}
+            >Gallery</li>
             </Link>
-          </Nav.Item>
+     </Nav.Item>*/}
         </ul>
       </Col>
     </Row>

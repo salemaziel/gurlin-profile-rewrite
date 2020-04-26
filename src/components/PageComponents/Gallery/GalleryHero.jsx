@@ -5,46 +5,45 @@ import Col from "react-bootstrap/Col";
 
 import NavBox from '../../NavBox'
 
-import contactStyle from "./contact.module.css";
+import galleryStyle from "./gallery.module.css";
 import { Signature2Sm, RomeCrop } from '../../../images/index'
-import ContactForm from "./ContactForm";
 
-const ContactHero = () => (
-  <section className={contactStyle.HeroSection}>
+const GalleryHero = () => (
+  <section className={galleryStyle.HeroSection}>
     <Row>
-      <Col className={contactStyle.Nomobile}>
+      <Col className={galleryStyle.Nomobile}>
         <NavBox />
  
       </Col>
 
       <Col>
-      <div className={contactStyle.SigBox}>
-          <img src={Signature2Sm} alt='' className={contactStyle.Signature}/>
+      <div className={galleryStyle.SigBox}>
+          <img src={Signature2Sm} alt='' className={galleryStyle.Signature}/>
       </div>
       </Col>
 
-      <Col className={contactStyle.Nomobile}>
+      <Col className={galleryStyle.Nomobile}>
       <div>
 
       </div>
       </Col>
     </Row>
-    <Container fluid className={contactStyle.HeroContainer}>
-      <ContactForm />
-      <Row className={contactStyle.BoxRow}>
-        {/*<Col xs={2} className={contactStyle.Nomobile}>
+    {/*
+    <Container fluid className={galleryStyle.HeroContainer}>
+      <Row className={galleryStyle.BoxRow}>
+        <Col xs={2} className={galleryStyle.Nomobile}>
         </Col>
 
         <Col > 
-        <div className={contactStyle.Spacer} />
-        <div className={contactStyle.BoxPic}>
-            <img src={RomeCrop} alt='' className={contactStyle.Pic} />
+        <div className={galleryStyle.Spacer} />
+        <div className={galleryStyle.BoxPic}>
+            <img src={RomeCrop} alt='' className={galleryStyle.Pic} />
         </div>
         </Col>
         <Col>
-        <div className={contactStyle.PicCaption}>
-            <div className={contactStyle.Header}>
-            <h1 className={contactStyle.title}>
+        <div className={galleryStyle.PicCaption}>
+            <div className={galleryStyle.Header}>
+            <h1 className={galleryStyle.title}>
                 Hey, I'm Rachel :)
             </h1>
             <div style={{height: '5px', width: '100%', color: '#F26C58', backgroundColor: '#F26C58', margin: '1rem auto'}} />
@@ -55,10 +54,10 @@ const ContactHero = () => (
             </div>
         </Col>
 
-        <Col xs={2} className={contactStyle.Nomobile}></Col>*/}
+        <Col xs={2} className={galleryStyle.Nomobile}></Col>
       </Row>
-</Container>
+    </Container>*/}
   </section>
 );
 
-export default ContactHero;
+export default GalleryHero;

@@ -1,10 +1,35 @@
+
+.GallerySection {
+    padding: 2% 0 2%;
+    margin: auto;
+    max-width: 100vw;
+    width: 100%;
+    background-color: rgba(255,255,255,.55);
+    background-size: stretch;
+    background: rgba(255,255,255,.55);
+}
+
+.GalleryContainer {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: #F26C58;
+    padding: 3rem;
+    background-color: rgba(255,255,255, .85);
+    box-shadow: 0px 0px 11px 5px rgba(139, 138, 138, 1);
+    -webkit-box-shadow: 0px 0px 11px 5px rgba(139, 138, 138,1);}
+
+
 .HeroSection {
-    padding: 2% 0 20px;
+    padding: 2% 0 0;
     margin: 0;
     max-width: 100vw;
     width: 100%;
 
 }
+
 
 .HeroContainer {
     /*background-image: url('../../../images/floral_border.png')*/
@@ -42,7 +67,6 @@
 
 .Pic {
     height: 100%;
-    width: 100%;
     z-index: 2;
     border: 3px solid;
     border-color: #F26C58;
@@ -98,13 +122,6 @@
     align-items: center;
     align-content: center;
     text-align: center;
-}
-
-
-.Section {
-   margin: auto;
-   padding: 2rem 0;
-   min-height: 30rem; 
 }
 
 
@@ -185,7 +202,7 @@
         background-size: cover;
         min-height: 30rem;
         width: 100%;
-        margin: 10% 0px 2%;
+        margin: 10% 0px;
         padding: 0px;
         background-attachment: scroll;
         overflow-y: visible;
@@ -196,7 +213,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        padding-top: 5rem;
+        padding-top: 10rem;
     }
 
     .BoxPic {
@@ -223,7 +240,7 @@
         min-width: auto;
         background-color: #ffffff;
         z-index: 2;
-        margin: auto;
+        margin: -50px 0;
         border-top: 10px solid;
         border-top-color: #F26C58;
         box-shadow: none;
@@ -249,7 +266,7 @@
         align-items: center;
         align-content: center;
         text-align: center;
-        padding: 0;
+        padding: 1rem;
 
     }
 
@@ -260,10 +277,6 @@
         font-size: 2rem;
         font-variant: initial;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .Section {
-        padding: 0;
     }
 }
 

@@ -4,11 +4,13 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 import AboutHero from './AboutHero'
+import AboutBody from './AboutBody'
 
 
 const AboutPage = (props) => (
 <>
 <AboutHero />
+<AboutBody />
 
 </>
 )

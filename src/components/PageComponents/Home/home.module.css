@@ -1,17 +1,44 @@
+
+.GallerySection {
+    padding: 2% 0 5%;
+    margin: auto;
+    max-width: 100vw;
+    width: 100%;
+    background-color: rgba(255,255,255,.35);
+    background-size: stretch;
+    background: rgba(255,255,255,.35);
+    border-top: 2px solid;
+    border-top-color: #F26C58;
+}
+
+.GalleryContainer {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: #F26C58;
+    padding: 3rem;
+    background-color: rgba(255,255,255, .85);
+}
+
+
 .HeroSection {
-    padding: 5% 0;
+    padding:2% 0 10%;
     margin: 0;
     max-width: 100vw;
     width: 100%;
 
 }
 
+
 .HeroContainer {
-    background-image: url('../../../images/floral_border.png');
+    /*background-image: url('../../../images/floral_border.png')*/
+    padding: 5% 0 0 0;
     background-position: top;
     background-size: cover;
     min-height: 40rem;
-    margin: 5% auto;
+    margin: auto;
 }
 
 .Signature {
@@ -29,7 +56,7 @@
 
 .BoxRow {
     margin: auto;
-    padding: 3rem 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
 }
@@ -99,6 +126,20 @@
     text-align: center;
 }
 
+
+
+.Line {
+    height: 5px;
+    width: 100%;
+    color: #F26C58;
+    background-color: #F26C58;
+    margin: 1rem auto;
+}
+
+.CaptionText {
+    margin: auto;
+    padding: 1.5rem 1rem;
+}
 
 
 
@@ -172,7 +213,7 @@
     }
 
     .HeroContainer {
-        background-image: url('../../../images/floral_border.png');
+        /*background-image: url('../../../images/floral_border.png')*/
         background-position: center top;
         background-size: cover;
         min-height: 30rem;
@@ -188,7 +229,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        padding-top: 10rem;
+        padding-top: 5rem;
     }
 
     .BoxPic {
@@ -210,17 +251,22 @@
     
     .PicCaption {
         display: flex;
-        height: 500px;
+        height: 100%;
         width: 100%;
         min-width: auto;
         background-color: #ffffff;
         z-index: 2;
-        margin: -50px 0;
+        margin: 0;
         border-top: 10px solid;
         border-top-color: #F26C58;
         box-shadow: none;
         -webkit-box-shadow: none;
-        
+        transform: scale(1.08);
+    }
+
+    .CaptionText {
+        margin: auto;
+        padding: 1rem 0.8rem;
     }
 
     .Pic {
@@ -241,17 +287,25 @@
         align-items: center;
         align-content: center;
         text-align: center;
-        padding: 1rem;
+        padding: 0;
 
     }
 
     .title {
         color: #F26C58;
-        padding: 10% 0;
+        padding: 30% 0 10%;
         margin: auto;
         font-size: 2rem;
         font-variant: initial;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .Line {
+        height: 2px;
+        width: 80%;
+        color: rgb(242, 108, 88);
+        background-color: rgb(242, 108, 88);
+        margin: 1rem auto;
     }
 }
 

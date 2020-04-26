@@ -3,14 +3,15 @@ import React from 'react'
 //import Row from 'react-bootstrap/Row'
 //import Col from 'react-bootstrap/Col'
 
-import HomeHero from './HomeHero'
-//import Gallery from './HomeImageGallery'
+import GalleryHero from './GalleryHero'
+import Gallery from './GalleryImageGallery'
 
-const HomePage = (props) => (
+const GalleryPage = (props) => (
 <>
-<HomeHero />
+<GalleryHero />
+<Gallery />
 
 </>
 )
 
-export default HomePage
+export default GalleryPage

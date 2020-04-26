@@ -1,5 +1,5 @@
 .HeroSection {
-    padding: 5% 0;
+    padding: 2% 0;
     margin: 0;
     max-width: 100vw;
     width: 100%;
@@ -7,10 +7,10 @@
 }
 
 .HeroContainer {
-    background-image: url('../../../images/floral_border.png');
+    /*background-image: url('../../../images/floral_border.png')*/
     background-position: top;
-    background-size: cover;
-    min-height: 40rem;
+    background-size: contain;
+    min-height: 10rem;
     margin: 5% auto;
 }
 
@@ -172,7 +172,7 @@
     }
 
     .HeroContainer {
-        background-image: url('../../../images/floral_border.png');
+        /*background-image: url('../../../images/floral_border.png')*/
         background-position: center top;
         background-size: cover;
         min-height: 30rem;
