@@ -152,6 +152,7 @@ input {
     .formBox {
       box-shadow: none;
       padding: 0;
+      width: auto;
     }
 }
 
