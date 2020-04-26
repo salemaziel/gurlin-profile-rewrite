@@ -75,7 +75,17 @@ const ContactForm = (props) => (
             
               <Form.Group>
               <label htmlFor="tel">Phone</label>
-                  <input type="message" name="phone" id="phone" className={contactformStyles.inputs} required />
+                  <input type="tel" name="phone" id="phone" className={contactformStyles.inputs} />
+              </Form.Group>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col>
+            
+              <Form.Group>
+              <label htmlFor="message">Message</label>
+                  <input type="textarea" name="message" id="message" className={contactformStyles.inputs} />
               </Form.Group>
             </Col>
           </Row>
