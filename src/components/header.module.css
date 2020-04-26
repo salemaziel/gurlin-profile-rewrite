@@ -1,0 +1,14 @@
+.Bar {
+    background-color: #F26C58;
+    min-width: 100%;
+    height: 5%;
+    min-height: 40px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .Bar{
+    min-height: 10px;
+    }
+}

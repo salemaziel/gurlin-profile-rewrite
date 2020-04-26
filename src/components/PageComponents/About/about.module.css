@@ -11,7 +11,7 @@
     background-position: top;
     background-size: cover;
     min-height: 40rem;
-    margin: 5% auto;
+    margin: auto;
 }
 
 .Signature {
@@ -29,7 +29,7 @@
 
 .BoxRow {
     margin: auto;
-    padding: 3rem 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
 }
@@ -42,6 +42,7 @@
 
 .Pic {
     height: 100%;
+    width: 100%;
     z-index: 2;
     border: 3px solid;
     border-color: #F26C58;
@@ -188,7 +189,7 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        padding-top: 10rem;
+        padding-top: 5rem;
     }
 
     .BoxPic {
@@ -215,7 +216,7 @@
         min-width: auto;
         background-color: #ffffff;
         z-index: 2;
-        margin: -50px 0;
+        margin: auto;
         border-top: 10px solid;
         border-top-color: #F26C58;
         box-shadow: none;

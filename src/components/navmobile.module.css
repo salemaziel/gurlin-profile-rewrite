@@ -9,4 +9,26 @@
         border-radius: 100%;
         border-color: #275EFE;
   }
-*/
+*/.MenuIcon {
+  z-index: 5;
+}
+
+.navLink {
+  font-size: 2rem;
+  color: darksalmon;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-variant: small-caps;
+}
+
+.navLink:hover {
+  text-decoration: none;
+  color: darksalmon;
+}
+
+.navLink:focus{
+  text-decoration: none;
+  color: darksalmon;
+}

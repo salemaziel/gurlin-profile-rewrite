@@ -5,44 +5,44 @@ import Col from "react-bootstrap/Col";
 
 import NavBox from '../../NavBox'
 
-import homeStyle from "./home.module.css";
+import contactStyle from "./contact.module.css";
 import { Signature2Sm, RomeCrop } from '../../../images/index'
 
-const HomeHero = () => (
-  <section className={homeStyle.HeroSection}>
+const ContactHero = () => (
+  <section className={contactStyle.HeroSection}>
     <Row>
-      <Col className={homeStyle.Nomobile}>
+      <Col className={contactStyle.Nomobile}>
         <NavBox />
  
       </Col>
 
       <Col>
-      <div className={homeStyle.SigBox}>
-          <img src={Signature2Sm} alt='' className={homeStyle.Signature}/>
+      <div className={contactStyle.SigBox}>
+          <img src={Signature2Sm} alt='' className={contactStyle.Signature}/>
       </div>
       </Col>
 
-      <Col className={homeStyle.Nomobile}>
+      <Col className={contactStyle.Nomobile}>
       <div>
 
       </div>
       </Col>
     </Row>
-    <Container fluid className={homeStyle.HeroContainer}>
-      <Row className={homeStyle.BoxRow}>
-        <Col xs={2} className={homeStyle.Nomobile}>
+    <Container fluid className={contactStyle.HeroContainer}>
+      <Row className={contactStyle.BoxRow}>
+        {/*<Col xs={2} className={contactStyle.Nomobile}>
         </Col>
 
         <Col > 
-        <div className={homeStyle.Spacer} />
-        <div className={homeStyle.BoxPic}>
-            <img src={RomeCrop} alt='' className={homeStyle.Pic} />
+        <div className={contactStyle.Spacer} />
+        <div className={contactStyle.BoxPic}>
+            <img src={RomeCrop} alt='' className={contactStyle.Pic} />
         </div>
         </Col>
         <Col>
-        <div className={homeStyle.PicCaption}>
-            <div className={homeStyle.Header}>
-            <h1 className={homeStyle.title}>
+        <div className={contactStyle.PicCaption}>
+            <div className={contactStyle.Header}>
+            <h1 className={contactStyle.title}>
                 Hey, I'm Rachel :)
             </h1>
             <div style={{height: '5px', width: '100%', color: '#F26C58', backgroundColor: '#F26C58', margin: '1rem auto'}} />
@@ -53,10 +53,10 @@ const HomeHero = () => (
             </div>
         </Col>
 
-        <Col xs={2} className={homeStyle.Nomobile}></Col>
+        <Col xs={2} className={contactStyle.Nomobile}></Col>*/}
       </Row>
-    </Container>
+</Container>
   </section>
 );
 
-export default HomeHero;
+export default ContactHero;

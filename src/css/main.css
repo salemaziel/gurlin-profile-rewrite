@@ -9,6 +9,9 @@ nav {
     z-index: 10;
     height: 5%;
     margin: 0 0 2rem 0;
+    background-color: #e9967acc;
+    background: rgba(233, 150, 122, 0.8);
+
 }
 
 
@@ -19,7 +22,7 @@ nav {
   }
   .mobileNav {
     display: inline-block !important;
-    z-index: 10;
+    z-index: 5;
     margin: 1% auto;
     justify-content: center;
     align-content: center;

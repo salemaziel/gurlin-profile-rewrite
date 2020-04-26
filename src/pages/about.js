@@ -2,11 +2,13 @@ import React from "react";
 import { Col, Row, Card, ListGroup } from "react-bootstrap";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import AboutPage from '../components/PageComponents/About/AboutPage'
 
-const AboutPage = () => (
+const About = () => (
   <Layout>
     <SEO title="About" />
-    <Row>
+    <AboutPage />
+    {/*<Row>
       <Col>
         <h1>About</h1>
         <p>This is a basic gatsby starter</p>
@@ -44,8 +46,8 @@ const AboutPage = () => (
           </Card.Body>
         </Card>
       </Col>
-    </Row>
+    </Row>*/}
   </Layout>
 );
 
-export default AboutPage;
+export default About;
