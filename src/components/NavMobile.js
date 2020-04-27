@@ -1,11 +1,11 @@
 import React from "react";
-import SideNav from "react-simple-sidenav";
+import SideNav, { MenuIcon } from "react-simple-sidenav";
 import { Link } from "gatsby";
 //import { LogoWshadowDarkVertSm } from '../images/index'
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Signature2Xs, MenuIcon } from "../images/index";
+import { Signature2Xs } from "../images/index";
 import navmobileStyles from "./navmobile.module.css";
 import Nav from "react-bootstrap/Nav";
 
@@ -48,7 +48,8 @@ class NavMobile extends React.Component {
               <span className="icon-bar" />
               <span className="icon-bar" /> 
           </div>*/}
-              <img src={MenuIcon} alt="" className={navmobileStyles.MenuIcon} />
+              {/*<img src={MenuIcon} alt="" className={navmobileStyles.MenuIcon} />*/}
+              <MenuIcon className={navmobileStyles.MenuIcon} />
             </div>
           </Col>
           <Col />

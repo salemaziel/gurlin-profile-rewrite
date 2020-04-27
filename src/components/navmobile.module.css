@@ -11,6 +11,9 @@
   }
 */.MenuIcon {
   z-index: 5;
+  height: 50px;
+  width: 90px;
+  fill: #F26C58;
 }
 
 .navLink {

@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import { Link } from 'gatsby'
 import ImageGallery from "react-image-gallery";
 
 import galleryStyle from "./gallery.module.css";
@@ -17,6 +18,8 @@ import {
   VeniceBalcony,
   GrandTeton,
   MountainsCalled,
+  WaterColorsPreview,
+  FloralComposition,
 } from "./../../../images/index";
 
 class Gallery extends React.Component {
@@ -38,61 +41,105 @@ class Gallery extends React.Component {
     const images = [
       {
         original: Butterfly,
-        thumbnail: Butterfly,
       },
       {
         original: Florence,
-        thumbnail: Florence,
       },
       {
         original: ColorfulLake,
-        thumbnail: ColorfulLake,
       },
       {
         original: ExploreNevada,
-        thumbnail: ExploreNevada,
       },
       {
         original: GrandCanyon,
-        thumbnail: GrandCanyon,
       },
       {
         original: GrandTetonLake,
-        thumbnail: GrandTetonLake,
       },
       {
         original: VeniceBalcony,
-        thumbnail: VeniceBalcony,
       },
       {
         original: GrandTeton,
-        thumbnail: GrandTeton,
       },
       {
         original: MountainsCalled,
-        thumbnail: MountainsCalled,
       },
     ];
+
+const art = [
+    {
+      original: WaterColorsPreview
+    },
+    {
+      original: FloralComposition
+    },
+];
+
     return (
       <section className={galleryStyle.GallerySection}>
+        <Row>
+          <Col>
+          <Link rel="preload" to="/gallery/photogallery">
+          <h3 style={{color:'#ff2852', textAlign: 'center'
+        }}>My Photography Gallery</h3>
+        </Link>
+          </Col>
+        </Row>
         <Container className={galleryStyle.GalleryContainer}>
           <Container className={galleryStyle.GalleryContainer}>
 
           <Row>
             <Col>
+            <Link rel="preload" to="/gallery/photogallery">
               <ImageGallery
                 showFullscreenButton={false}
                 showPlayButton={false}
-                startIndex={1}
+                startIndex={2}
                 items={images}
                 infinite={true}
-                showNav={true}
-                showThumbnails={true}
-                thumbnailPosition="left"
+                showNav={false}
+                showThumbnails={false}
                 showFullscreenButton={true}
                 showBullets={true}
                 showIndex={true}
               />
+              </Link>
+            </Col>
+          </Row>
+          </Container>
+        </Container>
+        <br />
+        <br />
+        <Row>
+          <Col>
+          <Link rel="preload" to="/gallery/artgallery">
+          <h3 style={{color:'#ff2852', textAlign: 'center'
+        }}>My Artwork</h3>
+        </Link>
+          </Col>
+        </Row>
+
+        <Container className={galleryStyle.GalleryContainer}>
+          <Container className={galleryStyle.GalleryContainer}>
+
+          <Row>
+            <Col>
+            <Link rel="preload" to="/gallery/artgallery">
+              <ImageGallery
+                showFullscreenButton={false}
+                showPlayButton={false}
+                startIndex={0}
+                items={art}
+                infinite={true}
+                showNav={false}
+                showThumbnails={false}
+                showFullscreenButton={true}
+                showBullets={true}
+                showIndex={true}
+              />
+              </Link>
             </Col>
           </Row>
           </Container>

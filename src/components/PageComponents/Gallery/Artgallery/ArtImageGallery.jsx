@@ -1,0 +1,71 @@
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
+import ImageGallery from "react-image-gallery";
+
+import galleryStyle from "../gallery.module.css";
+
+import {
+  WaterColorsPreview,
+  FloralComposition
+
+} from "../../../../images/index";
+
+class ArtGallery extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      colorSelect: "0",
+      sizeSelect: "0",
+    };
+  }
+  handleSelect = event => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
+  componentDidMount() {
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+  }
+  render() {
+    const art = [
+      {
+        original: WaterColorsPreview,
+        thumbnail: WaterColorsPreview,
+      },
+      {
+        original: FloralComposition,
+        thumbnail: FloralComposition,
+      },
+  ];
+    return (
+      <section className={galleryStyle.GallerySection}>
+        <Container className={galleryStyle.GalleryContainer}>
+          <Container className={galleryStyle.GalleryContainer}>
+
+          <Row>
+            <Col>
+              <ImageGallery
+                showFullscreenButton={false}
+                showPlayButton={false}
+                startIndex={1}
+                items={art}
+                infinite={true}
+                showNav={true}
+                showThumbnails={true}
+                thumbnailPosition="left"
+                showFullscreenButton={true}
+                showBullets={true}
+                showIndex={true}
+              />
+            </Col>
+          </Row>
+          </Container>
+        </Container>
+      </section>
+    );
+  }
+}
+
+export default ArtGallery;

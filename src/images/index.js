@@ -16,6 +16,8 @@ export const VeniceBalcony = require('./venice-balcony.jpg');
 export const GrandTeton = require('./grand-teton-national-park.jpg');
 export const GradCropped = require('./grad-cropped.jpeg');
 export const MountainsCalled = require('./mountains-called.jpg');
+export const FloralComposition = require('./floral-composition2-Horz-Lg.png');
+export const WaterColorsPreview = require('./rachels-watercolor-preview.jpeg');
 
 
 
