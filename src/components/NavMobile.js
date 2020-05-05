@@ -66,8 +66,8 @@ class NavMobile extends React.Component {
             </div>
           }
           titleStyle={{
-            backgroundColor: "rgba(255,255,255,0.85)",
-            color: "#black",
+            backgroundColor: "inherit!important",
+            background: "inherit",
             padding: "30px",
           }}
           items={[
@@ -101,9 +101,29 @@ class NavMobile extends React.Component {
               <Link
                 rel="preload"
                 className={navmobileStyles.navLink}
-                to="/gallery"
+                to="/gallery/artgallery"
               >
-                Gallery
+                Art
+              </Link>
+            </Nav.Item>,
+
+            <Nav.Item>
+              <Link
+                rel="preload"
+                className={navmobileStyles.navLink}
+                to="/gallery/photogallery"
+              >
+                Photography
+              </Link>
+            </Nav.Item>,
+
+            <Nav.Item>
+              <Link
+                rel="preload"
+                className={navmobileStyles.navLink}
+                to="/test"
+              >
+                Testing
               </Link>
             </Nav.Item>,
           ]}

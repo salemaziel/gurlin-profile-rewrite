@@ -14,7 +14,7 @@ nav {
     z-index: 10;
     height: 5%;
     margin: 0 0 2rem 0;
-    background-color: #e9967acc;
+    background-color: rgba(255, 255, 255,0.9)!important;
     background: rgba(233, 150, 122, 0.8);
 }
 

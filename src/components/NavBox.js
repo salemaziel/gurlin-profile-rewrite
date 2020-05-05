@@ -36,9 +36,23 @@ const NavBox = () => (
       </Nav.Item>
 
       <Nav.Item>
-          <Link rel="preload" to="/gallery">
+          <Link rel="preload" to="/gallery/artgallery">
             <li className={navboxStyle.NavListItem}
-            >Gallery</li>
+            >ArtWork</li>
+            </Link>
+       </Nav.Item>
+
+       <Nav.Item>
+          <Link rel="preload" to="/gallery/photogallery">
+            <li className={navboxStyle.NavListItem}
+            >Photography</li>
+            </Link>
+       </Nav.Item>
+
+       <Nav.Item>
+          <Link rel="preload" to="/test">
+            <li className={navboxStyle.NavListItem}
+            >Testing</li>
             </Link>
        </Nav.Item>
 

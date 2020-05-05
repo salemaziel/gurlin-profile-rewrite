@@ -45,6 +45,7 @@
 .Signature {
     width: 80%;
     margin: auto;
+    max-width: 600px;
 }
 
 .SigBox {
@@ -157,6 +158,7 @@
     .Signature {
         width: 100%;
         margin: auto;
+        max-width: 350px;
     }
 
     .Spacer {

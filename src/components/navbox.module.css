@@ -1,7 +1,7 @@
 .NavBox {
     display: inline-block;
     position: fixed;
-    padding: 5% 2.5%;
+    padding: 3% 3% 0 0;
     max-width: 300px;
     width: 100%;
     min-width: 200px;

@@ -29,6 +29,7 @@
     "react-helmet": "^5.2.1",
     "react-image-gallery": "^1.0.7",
     "react-instagram-embed": "^1.5.0",
+    "react-planet": "^1.0.0",
     "react-simple-sidenav": "^2.0.0"
   },
   "devDependencies": {
